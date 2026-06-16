@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 500 120">
+
+<rect
+x="5"
+y="5"
+width="490"
+height="110"
+rx="20"
+fill="#2563EB"/>
+
+<text
+x="250"
+y="75"
+font-family="Arial"
+font-size="48"
+font-weight="bold"
+fill="white"
+text-anchor="middle">
+
+GINSEN
+
+</text></svg>
