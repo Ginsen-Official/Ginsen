@@ -1,0 +1,109 @@
+.pdf-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:16px;
+
+    margin-bottom:15px;
+
+}
+
+.pdf-valid{
+
+    border-left:5px solid #22c55e;
+
+}
+
+.pdf-invalid{
+
+    border-left:5px solid #ef4444;
+
+}
+
+.pdf-name{
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+.pdf-meta{
+
+    color:#6b7280;
+
+    margin-bottom:12px;
+
+}
+
+.pdf-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.pdf-actions button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    color:white;
+
+}
+
+.up-btn{
+
+    background:#2563EB;
+
+}
+
+.down-btn{
+
+    background:#2563EB;
+
+}
+
+.remove-btn{
+
+    background:#ef4444;
+
+}
+
+.merge-btn{
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.merge-btn:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
