@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon"
+type="image/svg+xml"
+href="images/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PDF Splitter | Ginsen</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/pdf-splitter.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo-box">
+
+<h1>🛡️ GINSEN</h1>
+
+<p>
+Privacy-First Tools for Documents,
+Reading, and Productivity
+</p>
+
+</div>
+
+<button
+id="theme-toggle"
+class="theme-btn">
+🌙
+</button>
+
+</header>
+
+<div class="breadcrumb">
+
+Home / PDF Splitter
+
+</div>
+
+<section class="section-box">
+
+<h2>PDF Splitter</h2>
+
+<p>
+
+Extract selected pages directly
+inside your browser.
+
+No Server Uploads.
+
+</p>
+
+</section>
+
+<section class="section-box">
+
+<h3>Upload PDF</h3>
+
+<br>
+
+<input
+type="file"
+id="pdf-input"
+accept=".pdf">
+
+<br><br>
+
+<p>
+
+Maximum size:
+10 MB
+
+</p>
+
+</section>
+
+<section class="section-box">
+
+<h3>Select Pages</h3>
+
+<br>
+
+<input
+type="text"
+id="page-range"
+placeholder="Example: 1-5 or 1,4,8">
+
+<p class="helper">
+
+You may select pages visually
+or by typing page ranges.
+
+</p>
+
+</section>
+
+<section class="section-box">
+
+<h3>PDF Preview</h3>
+
+<br>
+
+<div id="thumbnail-grid">
+
+Upload a PDF to preview pages.
+
+</div>
+
+</section>
+
+<section class="section-box">
+
+<button
+id="split-btn"
+class="split-btn"
+disabled>
+
+Split PDF
+
+</button>
+
+</section>
+
+<section class="section-box">
+
+<h3>Output</h3>
+
+<br>
+
+<div id="output-area">
+
+No output generated yet.
+
+</div>
+</section>
+<div
+id="preview-modal"
+class="preview-modal">
+
+    <div
+    class="preview-content">
+
+        <button
+        id="close-preview"
+        class="close-preview">
+
+            ×
+
+        </button>
+
+        <canvas
+        id="preview-canvas">
+
+        </canvas>
+
+    </div>
+
+</div>
+<footer>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="faq.html">FAQ</a>
+
+</nav>
+
+<p>
+
+© 2026 Ginsen
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/common.js"></script>
+
+<script src="assets/pdfjs/pdf.min.js"></script>
+
+<script src="assets/pdf-lib/pdf-lib.min.js"></script>
+
+<script src="js/pdf-splitter.js"></script>
+</body>
+</html>

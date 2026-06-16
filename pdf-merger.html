@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon"
+type="image/svg+xml"
+href="images/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PDF Merger | Ginsen</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/pdf-merger.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo-box">
+
+<h1>🛡️ GINSEN</h1>
+
+<p>
+Privacy-First Tools for Documents,
+Reading, and Productivity
+</p>
+
+</div>
+
+<button
+id="theme-toggle"
+class="theme-btn">
+🌙
+</button>
+
+</header>
+
+<div class="breadcrumb">
+
+Home / PDF Merger
+
+</div>
+
+<section class="section-box">
+
+<h2>PDF Merger</h2>
+
+<p>
+
+Combine multiple PDFs directly
+inside your browser.
+
+No Server Uploads.
+
+</p>
+
+</section>
+
+<!-- Upload -->
+
+<section class="section-box">
+
+<h3>Upload PDFs</h3>
+
+<br>
+
+<input
+type="file"
+id="pdf-input"
+multiple
+accept=".pdf">
+
+<br><br>
+
+<p>
+
+Maximum 20 PDFs
+
+<br>
+
+Maximum 10 MB per PDF
+
+</p>
+
+</section>
+
+<!-- Files -->
+
+<section class="section-box">
+
+<h3>Uploaded PDFs</h3>
+
+<br>
+
+<div id="pdf-list">
+
+No PDFs selected.
+
+</div>
+
+</section>
+
+<!-- Merge -->
+
+<section class="section-box">
+
+<button
+id="merge-btn"
+class="merge-btn"
+disabled>
+
+Merge PDFs
+
+</button>
+
+</section>
+
+<!-- Output -->
+
+<section class="section-box">
+
+<h3>Output</h3>
+
+<br>
+
+<div id="output-area">
+
+Merged PDF will appear here.
+
+</div>
+
+</section>
+
+<footer>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="blog.html">Blog</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="faq.html">FAQ</a>
+
+</nav>
+
+<p>
+
+© 2026 Ginsen
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/common.js"></script>
+
+<script src="assets/pdf-lib/pdf-lib.min.js"></script>
+
+<script src="js/pdf-merger.js"></script>
+
+</body>
+</html>

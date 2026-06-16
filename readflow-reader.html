@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon"
+type="image/svg+xml"
+href="images/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ReadFlow Reader | Ginsen</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/readflow-reader.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="logo-box">
+
+            <h1>🛡️ GINSEN</h1>
+
+            <p>
+                Privacy-First Tools for Documents,
+                Reading, and Productivity
+            </p>
+
+        </div>
+
+        <button
+        id="theme-toggle"
+        class="theme-btn">
+
+            🌙
+
+        </button>
+
+    </header>
+
+    <!-- Breadcrumb -->
+
+    <div class="breadcrumb">
+
+        Home / ReadFlow Reader
+
+    </div>
+
+    <!-- Reader Intro -->
+
+    <section class="section-box">
+
+        <h2>
+
+            ReadFlow Reader
+
+        </h2>
+
+        <p>
+
+            Paste text or upload a TXT file.
+            Follow highlighted sentences while
+            listening to speech playback.
+
+        </p>
+
+    </section>
+
+    <!-- Input Section -->
+
+    <section class="section-box">
+
+        <label class="upload-label">
+
+            Upload TXT File
+
+        </label>
+
+        <input
+        type="file"
+        id="txt-upload"
+        accept=".txt">
+
+        <br><br>
+
+        <textarea
+
+        id="textInput"
+
+        placeholder=
+        "Paste your text here...">
+
+        </textarea>
+
+    </section>
+
+    <!-- Utility Bar -->
+
+    <section class="reader-bar">
+
+        <div>
+
+            <span class="small-label">
+
+                Estimated Duration
+
+            </span>
+
+            <div id="estimated-duration">
+
+                00:00:00
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <span class="small-label">
+
+                Playback Duration
+
+            </span>
+
+            <div id="playback-duration">
+
+                00:00:00
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Controls -->
+
+    <section class="controls">
+
+<button
+class="green-btn"
+onclick="startReading()">
+Speak
+</button>
+
+<button
+class="orange-btn"
+onclick="pauseReading()">
+Pause
+</button>
+
+<button
+class="blue-btn"
+onclick="resumeReading()">
+Resume
+</button>
+
+<button
+class="red-btn"
+onclick="stopReading()">
+Stop
+</button>
+
+<button
+class="purple-btn"
+onclick="resetAll()">
+Reset
+</button>
+
+    </section>
+
+    <!-- Reader Output -->
+
+    <section
+    id="display"
+    class="reader-display">
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+
+        </nav>
+
+        <p>
+
+            © 2026 Ginsen
+
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/common.js"></script>
+<script src="js/readflow-reader.js"></script>
+
+</body>
+</html>
